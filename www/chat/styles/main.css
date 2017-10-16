@@ -1,0 +1,129 @@
+html,body{
+	background-color:#efefef;
+	font-family:sans-serif;
+}
+.wrapper{
+	width:50rem;	
+	padding:0.5rem;
+	margin:0 auto;
+	background-color:#ddd;
+}
+#loginWrapper{
+	position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color:rgba(5, 5, 5, .6);
+    text-align:center;
+    color:#fff;
+    padding-top:20rem;	
+}
+#nickWrapper{
+	width:25rem;
+    left:50%;
+	margin-left:-12.5rem;
+}
+
+.banner{
+	height:7rem;
+	width:100%;
+}
+.banner p{
+	float:left;
+	display:inline-block;
+}
+#appName{
+	margin:0.7rem 0;
+}
+#historyMsg{
+	height:38rem;
+	background-color:#fff;
+	overflow:auto;
+}
+#controls{
+	height:10rem;
+	margin:0.5rem 0;
+	position:relative;
+}
+.items{
+	height:3rem;
+}
+#colorStyle{	
+	border:none;
+	padding:0;
+}
+#emoji{
+	position: absolute;
+	left:3.3rem;
+	top:0.3rem;
+}
+.imageLable{
+    position:relative;
+	left:7.5rem;
+}
+#sendImg{
+	position:relative;
+	left:7.5rem;
+	top:0.3rem;
+}
+#clearBtn{
+	position:relative;
+	left:7.3rem;
+	top:0.3rem;
+}
+#sendImage{
+	position:absolute;
+	width:4.5rem;
+	height:2.2rem;
+	left:7.5rem;
+	top:0.3rem;
+	opacity:0;
+	overflow:hidden;
+}
+#msgInput{
+	width:87.5%;	
+	height:9rem;
+	max-height:9rem;
+	resize:none;
+}
+#sendBtn{
+	width:11.5%;	
+	height:9rem;
+	float:right;
+	padding:0;
+}
+@media(max-width:655px){
+	.wrapper{
+        width:90%;
+    }
+}
+@media(max-width:400px){
+	#msgInput{
+		width:81.5%;
+	}
+	#sendBtn{
+		width:17.5%;
+	}
+}
+#emojiWrapper{
+	display:none;	
+	bottom:10.5rem;
+	position:absolute;
+	background-color:#aaa;
+	box-shadow:0 0 1rem #555;
+}
+#emojiWrapper img {
+    margin: 0.2rem;
+    padding: 0.2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+#emojiWrapper img:hover {
+    background-color:#4B4B4B;
+}
+.emoji{
+    display: inline;
+	width:2rem;
+	height:2rem;
+}

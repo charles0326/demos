@@ -1,0 +1,27 @@
+@media (max-width:1599px){
+    html{
+        font-size:14px;
+    }
+}
+@media (max-width:767px){
+    html{
+        font-size:12px;
+    }
+}
+body{
+    font-family: "Lato", sans-serif;
+    color: #090f25;
+    background: #666;
+}
+.counect_block{
+    padding-left:9.375rem;
+    padding-right:9.375rem;
+    padding-bottom:6.25rem;
+    background-color:#fff;
+}
+@media(max-width:1199px){
+    .counect_block{
+        padding-left:3.125rem;
+        padding-right:3.125rem;
+    }
+}

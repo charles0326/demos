@@ -1,0 +1,11 @@
+@import url(libs/jquery-ui.css);
+@import url(libs/style.css);
+@import url(libs/bootstrap.min.css);
+@import url(libs/bootstrap-datepicker3.min.css);
+@import url(libs/font-awesome.min.css);
+@import url(libs/build.css);
+
+@import url(xinde/base.css);
+@import url(xinde/xinde-input.css);
+@import url(xinde/upload-file.css);
+@import url(xinde/mobile-table.css);

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lan>
+    <html_title>Counect | Connect All Possibilities</html_title>
+    <header_homepage>Home</header_homepage>
+    <header_csp>Cloud Print</header_csp>
+    <header_hipay>CUPE / HiPay</header_hipay>
+    <header_coinect>Coinect</header_coinect>
+    <header_cube>CUBE 200s</header_cube>
+    <header_about>About Us</header_about>
+    <header_switch-lan>中文</header_switch-lan>
+    
+    <preview_theme>Connect All possibilities</preview_theme>
+    <preview_title1>Global Mobile Payment</preview_title1>
+    <preview_title2>Intelligent Vending Machine</preview_title2>
+    <preview_title3>Retail Data Aggregation</preview_title3>
+    
+    <csp_theme>Cloud Print</csp_theme>
+    <csp_describe1>Small Size, Big Imagination</csp_describe1>
+    <csp_describe2>Counect Smart Printer</csp_describe2>
+    <csp_describe3>Coupon Redemption&amp;nbsp;&amp;nbsp;Receipt Print&amp;nbsp;&amp;nbsp;Check In&amp;nbsp;&amp;nbsp;Mobile Payment</csp_describe3>
+    <csp_title1>Features</csp_title1>
+    <csp_title1_icon1>Remote Print</csp_title1_icon1>
+    <csp_title1_icon2>Voice Broadcast</csp_title1_icon2>
+    <csp_title1_icon3>Touch Control</csp_title1_icon3>
+    <csp_title1_icon4>Full Color Lights</csp_title1_icon4>
+    <csp_title1_icon5>NFC Reader</csp_title1_icon5>
+    <csp_title1_icon6>USB/BLE Accessories</csp_title1_icon6>
+    <csp_title2>Advantages</csp_title2>
+    <csp_title2_icon1>Module Customization</csp_title2_icon1>
+    <csp_title2_icon1_describe>Optional voice、NFC、bluetooth and USB modules</csp_title2_icon1_describe>
+    <csp_title2_icon2>Application Customization</csp_title2_icon2>
+    <csp_title2_icon2_describe>Cloud IFTTT define, include print, voice and accessories</csp_title2_icon2_describe>
+    <csp_title2_icon3>Brand Customization</csp_title2_icon3>
+    <csp_title2_icon3_describe>Customized body color, logo and packing case for batch order</csp_title2_icon3_describe>
+    
+    <hipay_theme>CUPE / HiPay</hipay_theme>
+    <hipay_describe1>Brand New Mobile Payment Verification Device</hipay_describe1>
+    <hipay_describe2>Designed to facilitate Chinese tourist spending overseas</hipay_describe2>
+    <hipay_describe3>Settlement in Local Currency</hipay_describe3>
+    <hipay_describe4>No Internet Connection Required</hipay_describe4>
+    <hipay_title1>Simple and Effective</hipay_title1>
+    <hipay_title1_describe1>One QR Code support all major mobile payment platforms</hipay_title1_describe1>
+    <hipay_title1_describe2>More are coming soon</hipay_title1_describe2>
+    <hipay_title2>Highly Secured</hipay_title2>
+    <hipay_title2_describe>3 levels of payment protection</hipay_title2_describe>
+    <hipay_title2_icon>Hardware Protection</hipay_title2_icon>
+    <hipay_title2_icon_describe>High density encryption chips</hipay_title2_icon_describe>
+    <hipay_title3_icon>Software Protection</hipay_title3_icon>
+    <hipay_title3_icon_describe>Patented tokenization algorithm of QR Code Order</hipay_title3_icon_describe>
+    <hipay_title4_icon>Physical Isolation</hipay_title4_icon>
+    <hipay_title4_icon_describe>No storage or exchange of sensitive data</hipay_title4_icon_describe>
+    <hipay_insurance>Transactions are Insured by People's Insurance Company of China</hipay_insurance>
+    
+    <coinect_theme>Coinect</coinect_theme>
+    <coinect_describe1>Cloud Coin Selector</coinect_describe1>
+    <coinect_describe2>A fast, convenient, secure vending machine mobile payment solution</coinect_describe2>
+    <coinect_describe3>Both MDB version and impulse Version</coinect_describe3>
+    <coinect_describe4>Compatible with 99% of self-service vending devices</coinect_describe4>
+    <coinect_title1>Application Scenarios</coinect_title1>    
+    <coinect_title1_icon1>Vending Machine</coinect_title1_icon1>
+    <coinect_title1_icon2>Amusement Machine</coinect_title1_icon2>
+    <coinect_title1_icon3>Washing Machine</coinect_title1_icon3>
+    <coinect_title1_icon4>Charging Machine</coinect_title1_icon4>
+    <coinect_title1_icon5>Car Washing Machine</coinect_title1_icon5>
+    <coinect_title1_icon6>Coffee Machine</coinect_title1_icon6>
+    <coinect_title2>Advantages</coinect_title2>
+    <coinect_title2_icon1>Plug and Play</coinect_title2_icon1>
+    <coinect_title2_icon1_describe>No need of mainboard modification, no need of extra screen installation, plug and play</coinect_title2_icon1_describe>
+    <coinect_title2_icon2>Membership Management</coinect_title2_icon2>
+    <coinect_title2_icon2_describe>Accomplish member identification, promotion, top up, transaction checking and other management functions through merchant platform</coinect_title2_icon2_describe>
+    <coinect_title2_icon3>Fast Settlement</coinect_title2_icon3>
+    <coinect_title2_icon3_describe>D+1 settelment to accounts, enable to bind to company or personal bank account or WeChat Pay/AliPay account</coinect_title2_icon3_describe>
+    
+    <cube_theme>CUBE 200s</cube_theme>
+    <cube_describe1>New Generation of CUBE</cube_describe1>
+    <cube_describe2>Collecting sales data from POS terminal in real time</cube_describe2>
+    <cube_describe3>High compatibility modular design</cube_describe3>
+    <cube_describe4>Plug and Play</cube_describe4>
+    <cube_title1>Why Choose CUBE 200s</cube_title1>
+    <cube_title2>Advantages</cube_title2>
+    <cube_title2_icon1>Open System</cube_title2_icon1>
+    <cube_title2_icon1_describe>Could integrate with third party's standard complied hardware</cube_title2_icon1_describe>
+    <cube_title2_icon2>High Compatibility</cube_title2_icon2>
+    <cube_title2_icon2_describe>99%+ compatible with all major interfaces</cube_title2_icon2_describe>
+    <cube_title2_icon3>Easy Deployment</cube_title2_icon3>
+    <cube_title2_icon3_describe>Connect cable, config parameter and network, done</cube_title2_icon3_describe>
+    <cube_title2_icon4>Friendly Backend</cube_title2_icon4>
+    <cube_title2_icon4_describe>Easy to use management system and receipt configuration system</cube_title2_icon4_describe>
+    <cube_title3>Modular Design</cube_title3>
+    <cube_title3_heading1>Intellectual Lid Module</cube_title3_heading1>
+    <cube_title3_heading1_describe>Full color status indication lights&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                iBeacon Supported&lt;br&gt;
+                                NFC tag &amp; reader integrated&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                Touch gesture control</cube_title3_heading1_describe>
+    <cube_title3_heading2>Data Monitoring Module</cube_title3_heading2>
+    <cube_title3_heading2_describe>USB module&lt;br&gt;
+                                Ethernet module&lt;br&gt;
+                                IBM 485 module&lt;br&gt;
+                                Standard/advanced parallel module&lt;br&gt;
+                                Serial module</cube_title3_heading2_describe>
+    <cube_title3_heading3>Master Unit Module</cube_title3_heading3>
+    <cube_title3_heading3_describe>400MHz core arithmetic unit, WAN, Wi-Fi and 3G&lt;br&gt;
+                                LAN and USB 2.0 x 2, 4G mass storage&lt;br&gt;
+                                12v in, 4v~8v power bus</cube_title3_heading3_describe>
+    
+    <about_theme>About Us</about_theme>
+    <about_describe1>Counect mission is to connect any possibility by integrating IOT and cloud computing technology in retail industry.</about_describe1>
+    <about_describe2>Counect philosophy is balancing less and more - a simple implementation and a powerful service is almost always the best for client.  Counect offer simple mobile payment and sales auditing IOT, and powerful multi-channel sales performance management SaaS.</about_describe2>
+    <about_describe3>Counect invented and patented 27 technologies servicing more than 5,000,000 customers at more than 50,000 POS each month.  Counect developed 4 vertical cloud services processing more than 6,000,000 payments each month in more than 300 cities in 7 countries. Counect R&amp;D is still driven by the technical challenges and imagination.</about_describe3>
+    <about_describe4>Counect team is a group of highly skilled and dedicated individuals that thrive on both solving problems and exploring unconnected territories.</about_describe4>
+    
+    <footer_title>Connect All Possibilities</footer_title>
+    <footer_company1>Beijing Head Quarter</footer_company1>
+    <footer_company1_address>Level 2, Building E, No.6 Gongyuan Xijie&lt;br&gt;Dongcheng, Beijing, China&lt;br&gt;+86 10 6518 9511</footer_company1_address>
+    <footer_company2>Shanghai Branch</footer_company2>
+    <footer_company2_address>Room 906, Yiyuan, No.1900 Tianshan Road&lt;br&gt;Changning, Shanghai, China&lt;br&gt;+86 021 5109 0966</footer_company2_address>
+    <footer_company3>Southern China Branch</footer_company3>
+    <footer_company3_address>Room 808, Building North, No.338, Meihua East Road&lt;br&gt; Zhuhai,Guangdong, China&lt;br&gt;+86 0756 2513 208</footer_company3_address>
+    <footer_time>©2017</footer_time>
+    <footer_counect>Counect Inc.</footer_counect>
+    <copyright>All rights reserved</copyright>
+</lan>

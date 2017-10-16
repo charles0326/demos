@@ -1,0 +1,49 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>hichat</title>	
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/jquery.minicolors.css">
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="scripts/jquery.minicolors.js"></script>
+	<script src="scripts/color-select.js"></script>
+	<script src='/socket.io/socket.io.js'></script>
+</head>
+<body>
+<div class="container-fluid wrapper" style="margin:auto;">	
+	<div class="banner">
+		<h1 id="appName">HiChat :)</h1>
+		<span id="status"></span>
+	</div>
+	<div id="historyMsg"></div>
+	<div id="controls">
+		<div class="items">			
+			<button type="button" id="colorStyle" class="form-control demo" data-control="hue" value="#000" style="width:3rem;height:3rem;"></button>
+			<button type="button" class="btn btn-primary btn-xs" id="emoji" title="emoji">emoji</button>
+			<label for="sendImage" class="imageLabel">				
+				<button type="button" class="btn btn-primary btn-xs" id="sendImg">image</button>
+				<input id="sendImage" type="file" value="image" />
+			</label>			
+			<button type="button" class="btn btn-primary btn-xs" id="clearBtn" title="clearscreen">clear</button>			
+		</div>
+		<div>
+			<textarea id="msgInput" placeholder="enter to send"></textarea>
+			<button type="button" class="btn btn-primary" id="sendBtn">SEND</button>
+		</div>
+		<div id="emojiWrapper"></div>
+	</div>
+</div>
+<div id="loginWrapper">
+	<p id="info">connecting to server...</p>	
+	<div id="nickWrapper" class="input-group">
+		<input type="text" class="form-control" id="nicknameInput" placeholder="nickname">
+		<span class="input-group-btn"><button type="button" class="btn btn-primary" id="loginBtn">OK</button></span>
+	</div>
+</div>
+<script type="text/javascript" src='scripts/hichat.js'></script>
+</body>
+</html>

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+<title>xinde_form</title>
+<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+<script src="assets/js/libs/pcasunzip.js" charset="UTF-8"></script>
+<script src="assets/js/libs/jquery-3.2.1.min.js"></script>
+<script src='assets/js/libs/autosize.min.js'></script>
+<script src="assets/js/libs/jquery-ui.js"></script>
+<script src="assets/js/libs/bootstrap.min.js"></script>
+<script src="assets/js/libs/bootstrap-datepicker.js"></script>
+<script src="assets/js/libs/locales/bootstrap-datepicker.zh-CN.js" charset="UTF-8"></script>
+</head>
+
+<body>
+<div class="container-fluid xinde_form" style="width:100%;min-width:340px;">
+	<form>
+		<div class="row xinde_block">
+			<div class="col-sm-12 title_signnum">
+				<label class="form_describe" for="singnum">請填寫報名序號</label>
+				<input type="text" id="singnum" class="form-control xinde_inputfield" onblur="blurHandler(this)">
+				<p class="form_error" id="error_singnum"></p>
+			</div>
+			<div class="col-sm-12 form_margin-low">				
+				<label class="form_title" for="fillform">填表日期</label>				
+				<div class="col-sm-12 iconfield_container">
+					<span class="glyphicon glyphicon-calendar form-control-feedback"></span>
+					<input type="text" class="form-control date xinde_inputfield date-picker" id="fillform" placeholder="年/月/日" style="padding:6px 26px;" onblur="blurHandler(this)">
+					<p class="form_error" id="error_fillform"></p>
+				</div>
+			</div>
+			<div class="col-sm-12 form_margin-high">
+				<h5 class="form_title">報名班級</h5>
+				<div class="radio radio-info radio-inline">
+					<input type="radio" id="inlineRadio1" value="option1" name="singclass">
+					<label class="radioContent" for="inlineRadio1"> 三根班 </label>
+				</div>
+				<div class="radio radio-info radio-inline">
+					<input type="radio" id="inlineRadio2" value="option2" name="singclass">
+					<label class="radioContent" for="inlineRadio2"> 漢學班 </label>
+				</div>
+			</div>
+			<div class="col-sm-12 form_margin-high">
+				<h5 class="form_title">學習期限</h5>
+				<p style="color:#800000;margin-bottom:5px;">現僅接收長期求學者，恕不接收四年、十年等短期求學者</p>
+				<div class="radio radio-info radio-inline">
+					<input type="radio" id="inlineRadio3" value="option3" name="learntime">
+					<label class="radioContent" for="inlineRadio3"> 長期（終身） </label>
+				</div>
+			</div>
+		</div>
+		<div class="row xinde_block">
+			<div class="col-sm-12 form_baseinfo">
+				<h5 class="partTitle font-family-heiti">◆ 基本信息</h5>
+			</div>
+			<div class="col-sm-12 form_margin-low">
+				<label class="form_title" for="inputname">1.姓名（請填寫最多4個字元）</label>
+				<p class="form_describe">請填寫您的真實姓名，與身份證信息一致</p>
+				<input type="text" id="inputname" class="form-control xinde_inputfield" onblur="blurHandler(this)">
+				<p class="form_error" id="error_inputname"></p>
+			</div>
+			<div class="col-sm-12 form_margin-high">
+				<h5 class="form_title">2.性别</h5>
+				<div class="radio radio-info radio-inline">
+					<input type="radio" id="inlineRadio4" value="option4" name="sex">
+					<label class="radioContent" for="inlineRadio4"> 男眾 </label>
+				</div>
+				<div class="radio radio-info radio-inline">
+					<input type="radio" id="inlineRadio5" value="option5" name="sex">
+					<label class="radioContent" for="inlineRadio5"> 女眾 </label>
+				</div>
+			</div>
+			<div class="col-sm-12 form_margin-low">
+				<label class="form_title" for="fillbirthday">3.出生日期</label>
+				<p class="form_describe">請填寫您的出生日期，與身份證信息一致</p>
+				<div class="col-sm-12 iconfield_container">
+					<span class="glyphicon glyphicon-calendar form-control-feedback"></span>
+					<input type="text" class="form-control date xinde_inputfield date-picker" id="fillbirthday" placeholder="年/月/日" style="padding:6px 26px;" onblur="blurHandler(this)">
+					<p class="form_error" id="error_fillbirthday"></p>
+				</div>
+			</div>
+			<div class="col-sm-12 form_margin-low">
+				<label class="form_title" for="inputage">4.年齡</label>
+				<div class="col-sm-12 iconfield_container">
+					<span class="glyphicon glyphicon-calendar form-control-feedback"></span>
+					<input type="number" min="1" class="form-control xinde_inputfield" id="inputage" style="padding:6px 26px;" onblur="blurHandler(this)">
+					<p class="form_error" id="error_inputage"></p>
+				</div>
+			</div>
+			<div class="col-sm-12 form_margin-low">
+				<h5 class="form_title">5.上傳近期免冠半身照</h5>
+				<p class="form_describe">請將文件名稱命名為“您的姓名-照片”，例如“張妙音-照片”</p>
+				<p class="form_describe" style="margin-top:1rem;">* 若無法上傳圖片，可能是手機端登錄或者瀏覽器的兼容問題，敬請換用其他瀏覽器嘗試</p>
+				<div class="attachment-container">
+					<div class="attachment-preview" id="attachment-preview">
+						<div class="progressbar" id="progressbar3"></div>
+						<div class="info">
+							<div class="cropit-preview" id="cropit-preview3"></div>
+							<div class="status">
+								<span class="file-name" id="file-name3"></span>
+								(<span class="file-size" id="file-size3"></span>)
+							</div>
+							<div class="actions">
+								<div class="rechoose-container">
+									<div style="position:absolute;left:0;top:0;">
+										<input type="file" class="rechoose-file" name="rechoose-file3" id="rechoose-file3" onchange="change(this)">
+									</div>
+									<div class="rechoose-link" data-role="rechoose" style="position:absolute;left:0px;top:0;">重現選擇</div>
+								</div> | 
+								<a class="delete-link" href="javascript:;" id="delete-link3" data-role="cancel">刪除</a>
+							</div>					
+						</div>
+					</div>
+					<div class="attachment-select" id="attachment-select2">
+						<a href="javascript:;" class="file-upload">
+							<div class="plus">+</div>
+							<div class="describe"> 請選擇或拖拽上傳檔案、限制每個20.0MB以內。</div>
+							<input type="file" name="upload-file" id="upload_file" onchange="change(this)" onblur="blurHandler(this)">
+						</a>
+					</div>
+				</div>
+				<p class="form_error" id="error_upload_file"></p>				
+			</div>
+			<div class="col-sm-12 form_margin-low">
+				<label class="form_title" for="introducer">6.介紹人</label>
+				<p class="form_describe">或注明您是從何處得知招生信息</p>
+				<input type="text" class="form-control xinde_inputfield" id="introducer" onblur="blurHandler(this)">
+				<p class="form_error" id="error_introducer"></p>
+			</div>
+			<div class="col-sm-12 form_margin-low">
+				<h5 class="form_title">7.籍貫</h5>
+				<div class="address-selects">
+					<div class="address-selects-inner">
+						<div class="entry-container-inner">
+							<select class="form-control xinde_inputfield" style="margin-right:0.5rem;max-width:none;" name="user.province1" id="province1" onblur="blurHandler(this)"></select>
+						</div>
+						<div class="entry-container-inner">
+							<select class="form-control xinde_inputfield" style="max-width:none;" name="user.city1" id="city1"></select>
+						</div>
+					</div>
+					<p class="form_error" id="error_province1"></p>
+				</div>
+			</div>
+			<div class="col-sm-12 form_margin-low">
+				<h5 class="form_title">8.戶籍地</h5>
+				<p class="form_describe">請填寫您的戶籍所在地，與身份證信息一致</p>
+				<div class="address-selects">
+					<div class="address-selects-inner">
+						<div class="entry-container-inner">
+							<select class="form-control xinde_inputfield" style="margin-right:0.5rem;max-width:none;" name="user.province2" id="province2" onblur="blurHandler(this)"></select>
+						</div>
+						<div class="entry-container-inner">
+							<select class="form-control xinde_inputfield" style="margin-right:0.5rem;max-width:none;" name="user.city2" id="city2"></select>
+						</div>
+						<div class="entry-container-inner">
+							<select class="form-control xinde_inputfield" style="max-width:none;" name="user.area2" id="area2"></select>
+						</div>
+					</div>
+					<p class="form_error" id="error_province2"></p>
+				</div>
+			</div>
+			<div class="col-sm-12 form_margin-low">
+				<label class="form_title" for="nation">9.民族</label>
+				<input type="text" class="form-control xinde_inputfield" id="nation" onblur="blurHandler(this)">
+				<p class="form_error" id="error_nation"></p>
+			</div>
+			<div class="col-sm-12 form_margin-low">
+				<label class="form_title" for="religion">10.宗教信仰</label>
+				<input type="text" class="form-control xinde_inputfield" id="religion" onblur="blurHandler(this)">
+				<p class="form_error" id="error_religion"></p>
+			</div>
+			<div class="col-sm-12 form_margin-high">
+				<h5 class="form_title">11.婚姻狀況</h5>
+				<div class="radio radio-info radio-inline">
+					<input type="radio" id="inlineRadio6" value="option6" name="marriage">
+					<label class="radioContent" for="inlineRadio6"> 已婚 </label>
+				</div>	
+				<div class="radio radio-info radio-inline">
+					<input type="radio" id="inlineRadio7" value="option7" name="marriage">
+					<label class="radioContent" for="inlineRadio7"> 未婚 </label>
+				</div>
+				<div class="radio radio-info radio-inline">
+					<input type="radio" id="inlineRadio8" value="option8" name="marriage">
+					<label class="radioContent" for="inlineRadio8"> 離異 </label>
+				</div>	
+				<div class="radio radio-info radio-inline">
+					<input type="radio" id="inlineRadio9" value="option9" name="marriage">
+					<label class="radioContent" for="inlineRadio9"> 喪偶 </label>
+				</div>
+			</div>
+			<div class="col-sm-12 form_margin-bottom">
+				<label class="form_title" for="hobby">12.愛好特長</label>
+				<input type="text" class="form-control xinde_inputfield" id="hobby" onblur="blurHandler(this)">
+				<p class="form_error" id="error_hobby"></p>
+			</div>
+		</div>
+		<div class="row xinde_block" style="padding-bottom:3rem;">
+			<div class="col-sm-12 form_baseinfo">			
+				<h5 class="partTitle font-family-heiti">◆ 有效證件信息</h5>
+			</div>
+			<div class="col-sm-12 form_margin-low">
+				<h5 class="form_title">1.有效證件類型</h5>
+				<p class="form_describe">請選擇您的有效證件類型，如果沒有身份證，也可選擇其他有效證件</p>
+				<select class="form-control" style="max-width:220px;" name="certificates" id="certificates1" onchange="certificateChange(this)" onblur="blurHandler(this)">
+					<option>請選擇</option>
+					<option>身份證</option>
+					<option>護照</option>
+					<option>港澳通行證</option>
+					<option>其他</option>
+				</select>
+				<p class="form_error" id="error_certificates1"></p>
+			</div>
+			<div class="col-sm-12 certificates-number form_margin-low" id="c_num" style="display:none;">
+				<label class="form_title" id="cnum_title" for="certificates_num">2.身份證號碼</label>
+				<p class="form_describe" id="cnum_describe">請填寫您的身份證號碼，與證件信息一致</p>
+				<input type="text" class="form-control xinde_inputfield" id="certificates_num" onblur="blurHandler(this)">
+				<p class="form_error" id="error_certificates_num"></p>
+			</div>
+			<div class="col-sm-12 certificates-photo" id="upload_c" style="display:none;">
+				<h5 class="form_title" id="upload_c_title">3.上傳身份證掃描件或拍攝件</h5>
+				<p class="form_describe" id="upload_c_describe">請分別上傳身份證正面、背面的彩色掃描件或者彩色照片，四角須完整；并將文件分別命名為“您的姓名-身份證正面”、“您的姓名-身份<br>證背面”，例如“張妙音-身份證正面”、“張妙音-身份證背面”</p>
+				<p class="form_describe">* 若無法上傳圖片，可能是手機端登錄或者瀏覽器的兼容問題，敬請換用其他瀏覽器嘗試</p>
+				<div class="attachment-container">
+					<div class="attachment-preview" id="certificates-preview1" style="margin-bottom:0.5rem;">
+						<div class="progressbar" id="progressbar1"></div>
+						<div class="info">
+							<div class="cropit-preview" id="cropit-preview1"></div>
+							<div class="status">
+								<span class="file-name" id="file-name1"></span>
+								(<span class="file-size" id="file-size1"></span>)
+							</div>
+							<div class="actions">
+								<div class="rechoose-container">							
+									<div style="position:absolute;left:0;top:0;">
+										<input type="file" class="rechoose-file" name="rechoose-file1" id="rechoose-file1" onchange="change(this)">
+									</div>
+									<div class="rechoose-link" id="rechoose-link1" data-role="rechoose" style="position:absolute;left:0px;top:0;">重現選擇</div>
+								</div> | 
+								<a class="delete-link" href="javascript:;" id="delete-link1" data-role="cancel">刪除</a>
+							</div>					
+						</div>
+					</div>
+					<div class="attachment-preview" id="certificates-preview2" style="margin-bottom:0.5rem;">
+						<div class="progressbar" id="progressbar2"></div>
+						<div class="info">
+							<div class="cropit-preview" id="cropit-preview2"></div>
+							<div class="status">						
+								<span class="file-name" id="file-name2"></span>
+								(<span class="file-size" id="file-size2"></span>)
+							</div>
+							<div class="actions">
+								<div class="rechoose-container">							
+									<div style="position:absolute;left:0;top:0;">
+										<input type="file" class="rechoose-file" name="rechoose-file2" id="rechoose-file2" onchange="change(this)">
+									</div>
+									<div class="rechoose-link" id="rechoose-link2" data-role="rechoose" style="position:absolute;left:0px;top:0;">重現選擇</div>
+								</div> | 
+								<a class="delete-link" href="javascript:;" id="delete-link2" data-role="cancel">刪除</a>
+							</div>					
+						</div>
+					</div>
+					<div class="attachment-select" id="attachment-select1">
+						<a href="javascript:;" class="file-upload">
+							<div class="plus">+</div>
+							<div class="describe"> 請選擇或拖拽上傳檔案（最多兩個）、限制每個20.0MB以內。</div>
+							<input type="file" name="certificates-upload" id="certificates_upload" onchange="change(this)" onblur="blurHandler(this)">
+						</a>
+					</div>
+				</div>
+				<p class="form_error" id="error_certificates_upload"></p>
+			</div>
+		</div>
+		<div class="row xinde_block" style="padding-bottom:0;">		
+			<div class="col-sm-12 form_personinfo">			
+				<h5 class="partTitle font-family-heiti">◆ 個人經歷</h5>
+			</div>
+			<div class="col-sm-12 form_margin-high">
+				<h5 class="form_title">1.有無學過傳統文化</h5>
+				<div class="radio radio-info radio-inline">
+					<input type="radio" id="inlineRadio24" value="option24" name="learn1">
+					<label class="radioContent" for="inlineRadio24"> 有 </label>
+				</div>
+				<div class="radio radio-info radio-inline">
+					<input type="radio" id="inlineRadio25" value="option25" name="learn1">
+					<label class="radioContent" for="inlineRadio25"> 没有 </label>
+				</div>
+			</div>
+			<div class="col-sm-12 form_margin-high">
+				<h5 class="form_title">2.有無學過佛法</h5>
+				<div class="radio radio-info radio-inline">
+					<input type="radio" id="inlineRadio26" value="option26" name="learn2">
+					<label class="radioContent" for="inlineRadio26"> 有 </label>
+				</div>
+				<div class="radio radio-info radio-inline">
+					<input type="radio" id="inlineRadio27" value="option27" name="learn2">
+					<label class="radioContent" for="inlineRadio27"> 没有 </label>
+				</div>
+			</div>
+			<div class="col-sm-12 form_margin-low">
+				<label class="form_title" for="school_info">3. 學校求學、社會工作經歷說明（請填寫最少350個字元）</label>
+				<textarea class="form-control" rows="3" style="resize:none;overflow-y:hidden;" id="school_info" onblur="blurHandler(this)"></textarea>
+				<p class="form_error" id="error_school_info"></p>
+			</div>
+			<div class="col-sm-12 form_homeinfo form_margin-high">
+				<h5 class="partTitle font-family-heiti" style="margin-bottom:0.7rem;">◆ 家庭情况</h5>
+				<table class="table table-bordered" id="default_table" width="100%">
+					<thead>
+						<tr>
+							<th style="width:3rem"></th>
+							<th style="width:4.19rem">姓名</th>
+							<th style="width:4.19rem">與本人關係</th>
+							<th style="width:4.19rem">職業</th>
+							<th style="width:4.19rem">電話</th>
+							<th style="width:4.19rem">是否學佛</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="matrix">
+					<table class="table text-nowrap">
+						<thead></thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>
+									<b>姓名</b>
+									<input type="text">
+								</td>
+								<td>
+									<b>與本人關係</b>
+									<input type="text">
+								</td>
+								<td>
+									<b>職業</b>
+									<input type="text">
+								</td>
+								<td>
+									<b>電話</b>
+									<input type="text">
+								</td>
+								<td>
+									<b>是否學佛</b>
+									<input type="text">
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>
+									<b>姓名</b>
+									<input type="text">
+								</td>
+								<td>
+									<b>與本人關係</b>
+									<input type="text">
+								</td>
+								<td>
+									<b>職業</b>
+									<input type="text">
+								</td>
+								<td>
+									<b>電話</b>
+									<input type="text">
+								</td>
+								<td>
+									<b>是否學佛</b>
+									<input type="text">
+								</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>
+									<b>姓名</b>
+									<input type="text">
+								</td>
+								<td>
+									<b>與本人關係</b>
+									<input type="text">
+								</td>
+								<td>
+									<b>職業</b>
+									<input type="text">
+								</td>
+								<td>
+									<b>電話</b>
+									<input type="text">
+								</td>
+								<td>
+									<b>是否學佛</b>
+									<input type="text">
+								</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>
+									<b>姓名</b>
+									<input type="text">
+								</td>
+								<td>
+									<b>與本人關係</b>
+									<input type="text">
+								</td>
+								<td>
+									<b>職業</b>
+									<input type="text">
+								</td>
+								<td>
+									<b>電話</b>
+									<input type="text">
+								</td>
+								<td>
+									<b>是否學佛</b>
+									<input type="text">
+								</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>
+									<b>姓名</b>
+									<input type="text">
+								</td>
+								<td>
+									<b>與本人關係</b>
+									<input type="text">
+								</td>
+								<td>
+									<b>職業</b>
+									<input type="text">
+								</td>
+								<td>
+									<b>電話</b>
+									<input type="text">
+								</td>
+								<td>
+									<b>是否學佛</b>
+									<input type="text">
+								</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>
+									<b>姓名</b>
+									<input type="text">
+								</td>
+								<td>
+									<b>與本人關係</b>
+									<input type="text">
+								</td>
+								<td>
+									<b>職業</b>
+									<input type="text">
+								</td>
+								<td>
+									<b>電話</b>
+									<input type="text">
+								</td>
+								<td>
+									<b>是否學佛</b>
+									<input type="text">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="col-sm-12 form_margin-low">
+				<label class="form_title" for="father">父親家族從事行業詳細說明（請填寫最少200個字元）</label>
+				<textarea class="form-control" rows="3" style="resize:none;" id="father" onblur="blurHandler(this)"></textarea>
+				<p class="form_error" id="error_father"></p>
+			</div>
+			<div class="col-sm-12 form_margin-low">
+				<label class="form_title" for="mother">母親家族從事行業詳細說明（請填寫最少200個字元）</label>
+				<textarea class="form-control" rows="3" style="resize:none;" id="mother" onblur="blurHandler(this)"></textarea>
+				<p class="form_error" id="error_mother"></p>
+			</div>
+			<div class="col-sm-12 form_margin-high" style="padding-bottom:7rem;border-bottom:1px solid #ddd;">
+				<h5 class="form_title font-family-heiti" style="font-size:1.7rem;margin-bottom:3rem;">◆ 此報名表僅限每人提交一次，請務必確認無誤之後，再提交報名</h5>
+				<p style="color:#4B4B4B;">若您在報名過程中，遇到任何問題，歡迎致電報恩寺客堂 <b>15750242092</b> 詳詢，或者郵件聯繫三根班教務<br>組 <b>sgb@xindedu.org</b> ，漢學班教務組 <b>hxb@xindedu.org</b>。</p>
+				<p style="color:#4B4B4B;margin-bottom:3rem;">* 若不能成功提交報名表，可能是手機端登錄或者瀏覽器的兼容問題，敬請換用其他瀏覽器嘗試</p>
+				<div class="radio radio-info radio-inline">
+					<input type="radio" id="inlineRadio28" value="option28" name="confirmForm">
+					<label class="radioContent" for="inlineRadio28"> 是的，已經確認無誤 </label>
+				</div>
+			</div>
+		</div>
+		<div class="row xinde_block" style="text-align:center;padding-bottom:6rem;">
+			<div class="btn btn-primary submit-btn" id="submit_btn">提交報名</div>
+		</div>
+	</form>
+</div>
+
+<script src='assets/js/xinde-form.js'></script>
+</body>
+</html>

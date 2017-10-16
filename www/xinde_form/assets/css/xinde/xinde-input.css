@@ -1,0 +1,101 @@
+.xinde_form{
+	
+}
+.xinde_block{
+	padding-left:1.5rem;
+    padding-right:3.5rem;    
+    background-color:#fff;
+}
+.xinde_inputfield{
+	width:100%;
+	max-width:260px;
+}
+.form_baseinfo{	
+	border-top:1px dashed #969696;
+}
+.form_personinfo{
+	border-top:1px dashed #969696;
+}
+
+.title_signnum{
+	margin-top:2rem;
+	margin-bottom:2rem;
+}
+.form_margin-bottom{
+	margin-bottom:2.5rem;
+}
+.form_margin-high{
+	margin-bottom:4rem;
+}
+.form_margin-low{
+	margin-bottom:2rem;
+}
+
+.iconfield_container{
+	margin:0;
+	padding:0;
+}
+
+.partTitle{
+	color:rgb(0,51,104);
+	font-size:1.5rem;
+	font-weight:300;
+	margin-bottom:4rem;
+}
+.form_title{
+	color:rgb(0,51,104);
+	font-size:1.5rem;
+	font-weight:300;
+	margin-bottom:0.5rem;
+	cursor:pointer;
+}
+.form_describe{
+	color:#4B4B4B;
+	font-weight:400;
+	font-size:1.2rem;
+	margin-bottom:0.5rem;
+}
+.form_title:after{
+	content:" *";
+	color:red;
+}
+.form_error{
+	color:red;
+	font-size:1.2rem;
+	margin-top:0.5rem;
+	height:1.5rem;
+}
+
+.radioContent{
+	font-size:1.15rem;
+}
+.submit-btn{
+	background-color:#fff;
+	color:#2e6da4;
+	border-radius: 2px;
+	width:18rem;
+}
+.submit-btn:hover{
+	background-color:#fff;
+	color:#2e6da4;
+}
+
+.address-selects{
+	width:100%;
+	max-width:470px;
+	display:table;
+	table-layout:fixed;
+	border-spacing:5px 0;
+	border-collapse:separate;
+	margin-left:-5px;
+	margin-right:-5px;
+}
+.address-selects-inner{
+	display:table-row;
+}
+.entry-container-inner{
+	display: table-cell;
+	position:relative;
+	width:100%;
+	height:30px;
+}

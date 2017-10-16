@@ -1,0 +1,66 @@
+.form-control{
+	border-radius:2px;
+	padding:6px 3px;
+}
+.form-control-feedback{
+	width:26px;
+	left:0;
+}
+.glyphicon-remove-sign{
+	top:2px;
+	right:2px;
+}
+.table > thead > tr > th {
+	border-bottom: 1px solid #ddd;
+	text-align:center;
+	background-color:#F1F1F1;
+	font-size:1.2rem;
+	font-weight:550;
+}
+.table > tbody > tr > td{	
+	font-size:1.2rem;
+}
+.table > tbody > tr > td:first-child{
+	padding-left:0.8rem;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding:0;
+  line-height: 2.4;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+.table > tbody > tr > td > input{
+	border:0;
+	width:100%;
+	max-width: none;
+	height:2.8rem;
+	box-shadow:none;
+	padding:0 0.5rem;
+	outline:none;
+	background-color:rgba(246,252,255,0);
+}
+.font-family-heiti {
+    font-family: "Hiragino Sans GB", STXihei, "Microsoft YaHei", sans-serif;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+    margin-right:-2rem;
+	height:3.15rem;
+}
+
+.matrix{
+	display:none;
+}
+@media(max-width:655px){
+    #default_table{
+        display:none;
+    }
+	.matrix{
+		display:block;
+	}
+}

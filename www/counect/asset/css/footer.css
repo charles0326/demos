@@ -1,0 +1,41 @@
+.counect_footer{
+    background-color:rgb(9,15,37);
+    font-size:0.875rem;
+    padding-top:3.125rem;
+    padding-bottom:3.125rem;
+    color: #5c6689;
+}    
+.counect_footer_title{
+    text-transform: uppercase;
+    margin-bottom: 1.875rem;
+    margin-top: 3.125rem;
+    font-size: 1.125rem;
+}
+.counect_footer_title-light{
+    color:#c5cad8;
+}
+.counect_footer_bottom{
+    margin-top:2.5rem;
+    padding-top:3.125rem;
+    border-top:1px solid rgba(92, 102, 137, 0.4);
+}
+.counect_footer_company{
+    padding-left:3.75rem;
+    position:relative;
+    line-height:0.625rem;
+}    
+.counect_footer_company-icon{
+    position:absolute;
+    top:0;
+    left:0;
+    width:1.875rem;
+}
+.counect_footer_company-link{
+    color:#5c6689 !important;
+    text-decoration: underline;
+    display: inline-block;
+    margin-bottom: 0.625rem;
+}
+.counect_footer_company-link:hover{
+    text-decoration:none;
+}

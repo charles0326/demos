@@ -1,0 +1,53 @@
+.counect_preview{
+    height:100vh;
+    background-image:url(../img/city.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+.counect_preview_theme{
+    font-size:3.75rem;
+    font-weight:900;
+    letter-spacing:2px;
+    color:#fff;
+    text-transform:uppercase;
+    text-shadow:0 0 20px #000;
+    margin:3.125rem 0;
+}
+.counect_preview_container h4{
+    margin-bottom:0.5rem;
+    font-size:1.5rem;
+    font-weight:500;
+    line-height:0.9;
+    color:white;
+    text-shadow:0 0 20px #000;
+}
+.counect_part-title{
+    font-size:2.25rem;
+    font-weight:900;
+    letter-spacing:0.125rem;
+    margin:0 auto 1.25rem;
+    text-align:center;
+    padding-top:3.125rem;
+    text-transform:uppercase;
+}
+.counect_sub-title{
+    text-align:center;
+    color:#333;
+}
+.counect_ringlike{
+    width:3.21rem;
+    height:3.21rem;
+    display:inline-block;
+    background-color:white;
+    border-radius:50%;
+    border:3px solid rgb(1,168,254);
+}
+.counect_icon{
+    font-size:1.7rem;
+    color:rgb(1,168,254);
+}

@@ -1,0 +1,12 @@
+{
+  "name": "hichat",
+  "version": "1.0.0",
+  "description": "pactice",
+  "main": "server.js",
+  "author": "charles",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.1",
+    "socket.io": "^2.0.3"
+  }
+}

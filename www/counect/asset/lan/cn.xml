@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lan>
+    <html_title>互帮 | 联结一切可能</html_title>
+    <header_homepage>首页</header_homepage>
+    <header_csp>云打印</header_csp>
+    <header_hipay>酷贝/海贝</header_hipay>
+    <header_coinect>云投币</header_coinect>
+    <header_cube>酷方 200s</header_cube>
+    <header_about>关于我们</header_about>
+    <header_switch-lan>English</header_switch-lan>
+    
+    <preview_theme>联结一切可能</preview_theme>
+    <preview_title1>全 球 移 动 支 付</preview_title1>
+    <preview_title2>智 能 自 助 设 备</preview_title2>
+    <preview_title3>零 售 数 据 聚 合</preview_title3>
+    
+    <csp_theme>云打印</csp_theme>
+    <csp_describe1>小身材 大想象</csp_describe1>
+    <csp_describe2>互帮智能打印机</csp_describe2>
+    <csp_describe3>优惠核销 凭证打印 会员签到 移动支付</csp_describe3>
+    <csp_title1>支持功能</csp_title1>
+    <csp_title1_icon1>远程打印</csp_title1_icon1>
+    <csp_title1_icon2>语音播报</csp_title1_icon2>
+    <csp_title1_icon3>触摸控制</csp_title1_icon3>
+    <csp_title1_icon4>全彩状态灯</csp_title1_icon4>
+    <csp_title1_icon5>NFC 读头</csp_title1_icon5>
+    <csp_title1_icon6>USB / 蓝牙外设</csp_title1_icon6>
+    <csp_title2>产品优势</csp_title2>
+    <csp_title2_icon1>模块定制</csp_title2_icon1>
+    <csp_title2_icon1_describe>可选的语音播报、NFC、蓝牙和 USB 外设支持</csp_title2_icon1_describe>
+    <csp_title2_icon2>应用定制</csp_title2_icon2>
+    <csp_title2_icon2_describe>云端自定义设置，包括打印、语音播报和外设</csp_title2_icon2_describe>
+    <csp_title2_icon3>品牌定制</csp_title2_icon3>
+    <csp_title2_icon3_describe>可批量定制颜色、品牌 Logo 和包装</csp_title2_icon3_describe>
+    
+    <hipay_theme>酷贝/海贝</hipay_theme>
+    <hipay_describe1>全世界随处可用的酷贝</hipay_describe1>
+    <hipay_describe2>专为中国游客海外消费设计</hipay_describe2>
+    <hipay_describe3>商家本地货币结算</hipay_describe3>
+    <hipay_describe4>无需互联网接入</hipay_describe4>
+    <hipay_title1>简单有效</hipay_title1>
+    <hipay_title1_describe1>一个二维码支持全部主流手机钱包</hipay_title1_describe1>
+    <hipay_title1_describe2>更多支付陆续加入中</hipay_title1_describe2>
+    <hipay_title2>安全第一</hipay_title2>
+    <hipay_title2_describe>三重保障为您的资金安全保驾护航</hipay_title2_describe>
+    <hipay_title2_icon>硬件保护</hipay_title2_icon>
+    <hipay_title2_icon_describe>高密级专用加密芯片</hipay_title2_icon_describe>
+    <hipay_title3_icon>软件加密</hipay_title3_icon>
+    <hipay_title3_icon_describe>订单二维码专利算法</hipay_title3_icon_describe>
+    <hipay_title4_icon>物理隔绝</hipay_title4_icon>
+    <hipay_title4_icon_describe>不存储交换敏感数据</hipay_title4_icon_describe>
+    <hipay_insurance>本产品由中国人民财产保险股份有限公司承保</hipay_insurance>
+    
+    <coinect_theme>云投币</coinect_theme>
+    <coinect_describe1>云端投币器</coinect_describe1>
+    <coinect_describe2>快速、便捷、安全的自助设备移动支付方案</coinect_describe2>
+    <coinect_describe3>有 MDB 版本和脉冲版本</coinect_describe3>
+    <coinect_describe4>兼容市场 99% 的自助服务设备</coinect_describe4>
+    <coinect_title1>应用场景</coinect_title1>    
+    <coinect_title1_icon1>自动贩卖机</coinect_title1_icon1>
+    <coinect_title1_icon2>街边游戏机</coinect_title1_icon2>
+    <coinect_title1_icon3>自助洗衣机</coinect_title1_icon3>
+    <coinect_title1_icon4>自助充电桩</coinect_title1_icon4>
+    <coinect_title1_icon5>自助洗车机</coinect_title1_icon5>
+    <coinect_title1_icon6>自助咖啡机</coinect_title1_icon6>
+    <coinect_title2>产品优势</coinect_title2>
+    <coinect_title2_icon1>即插即用</coinect_title2_icon1>
+    <coinect_title2_icon1_describe>无需改造机器主板，无需加装屏幕，即可完成移动支付改造</coinect_title2_icon1_describe>
+    <coinect_title2_icon2>会员管理</coinect_title2_icon2>
+    <coinect_title2_icon2_describe>通过商户平台对会员进行识别、营销、充值查账等管理事项</coinect_title2_icon2_describe>
+    <coinect_title2_icon3>快速清分</coinect_title2_icon3>
+    <coinect_title2_icon3_describe>D+1 清分到公司帐户或个人帐户，支持清分到微信支付</coinect_title2_icon3_describe>
+    
+    <cube_theme>酷方 200S</cube_theme>
+    <cube_describe1>新一代酷方</cube_describe1>
+    <cube_describe2>实时抓取和分析零售终端销售数据</cube_describe2>
+    <cube_describe3>极高兼容性的模块化设计</cube_describe3>
+    <cube_describe4>即插即用</cube_describe4>
+    <cube_title1>为什么选择酷方 200s</cube_title1>
+    <cube_title2>产品优势</cube_title2>
+    <cube_title2_icon1>开放系统</cube_title2_icon1>
+    <cube_title2_icon1_describe>可与第三方标准设备集成</cube_title2_icon1_describe>
+    <cube_title2_icon2>兼容性强</cube_title2_icon2>
+    <cube_title2_icon2_describe>兼容 99%+ 常用打印机接口</cube_title2_icon2_describe>
+    <cube_title2_icon3>易于安装</cube_title2_icon3>
+    <cube_title2_icon3_describe>连接线缆，配置参数和网络，完成</cube_title2_icon3_describe>
+    <cube_title2_icon4>友好后台</cube_title2_icon4>
+    <cube_title2_icon4_describe>易于使用的管理系统和水单配置系统</cube_title2_icon4_describe>
+    <cube_title3>模块化设计</cube_title3>
+    <cube_title3_heading1>智能顶盖模块</cube_title3_heading1>
+    <cube_title3_heading1_describe>全彩状态灯，iBeacon 支持&lt;br&gt;NFC 读写器和标签，触摸手势控制</cube_title3_heading1_describe>
+    <cube_title3_heading2>数据监控模块</cube_title3_heading2>
+    <cube_title3_heading2_describe>USB 模块&lt;br&gt;以太网模块&lt;br&gt;IBM 485 模块&lt;br&gt;标准/增强并口模块&lt;br&gt;串口模块</cube_title3_heading2_describe>
+    <cube_title3_heading3>主控单元模块</cube_title3_heading3>
+    <cube_title3_heading3_describe>400MHz 核心处理器，WAN，Wi-Fi 和 3G&lt;br&gt;LAN 和 USB 2.0 x 2，4G 存储&lt;br&gt;12v 输入，4v~8v 电源总线</cube_title3_heading3_describe>
+    
+    <about_theme>关于我们</about_theme>
+    <about_describe1>创立七年，互帮一直深信新兴物联网技术和云计算服务将彻底改变传统零售业，这里将和互联网领域一样，一切联结成为可能。</about_describe1>
+    <about_describe2>互帮推崇的最佳客户方案是能够平衡技术致简与服务完善的产品，赢得市场尊重靠的不仅是不断创新研发的技术，更是全维透视客户的艺术。互帮轻简的物联网技术解决移动支付和销售数据对接问题，互帮完整的行业云服务专注多节点销售业绩分析和分账管理。</about_describe2>
+    <about_describe3>今天互帮自主研发的 27 项国内外专利每月在超过 5 万个零售点服务着超过5百万消费者，互帮云服务每月处理着来自 7 个国家地区，超过 300 个城市，5 百多万笔的交易。发展中挑战不止，创新中想象无限，互帮人的研发从未止步。</about_describe3>
+    <about_describe4>互帮专业团队来自 60 后到 95 后的大跨度区间，从国际知名上市企业高管到大学生创业团队核心成员，有能力，有活力，有经验，更惊艳，他们不断打通新界域，寻找的不是最终的解决方案，而是未来的更多可能。</about_describe4>
+    
+    <footer_title>联结一切可能</footer_title>
+    <footer_company1>北京总部</footer_company1>
+    <footer_company1_address>贡院西街 6 号 E 座 2 层，东城区，北京市，中国&lt;br&gt;+86 10 6518 9511</footer_company1_address>
+    <footer_company2>上海分公司</footer_company2>
+    <footer_company2_address>天山路 1900 号 易园 906 室，长宁区，上海市，中国&lt;br&gt;+86 021 5109 0966</footer_company2_address>
+    <footer_company3>华南分公司</footer_company3>
+    <footer_company3_address>梅华东路338号北楼 808 室，珠海市，广东省，中国&lt;br&gt;+86 0756 2513 208</footer_company3_address>
+    <footer_time>©2017</footer_time>
+    <footer_counect>互帮国际技术</footer_counect>
+    <copyright>所有权利保留</copyright>
+</lan>

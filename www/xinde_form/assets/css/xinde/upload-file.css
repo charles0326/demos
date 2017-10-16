@@ -1,0 +1,133 @@
+.file-upload {
+	position:relative;
+	display:table;
+	background:#fff;
+	border:1px dashed #969696;
+	padding:4px 0;
+	overflow:hidden;
+	color:#000;
+	text-decoration:none;
+	text-indent:0;
+	width:100%;
+	line-height:2.6rem;
+}
+.file-upload input {
+	display:block;
+	position:absolute;
+	font-size:100px;
+	right:0;
+	top:0;
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+.file-upload:hover {
+	background-color:#E6F5FF;
+	border-color:#969696;
+	color:#000;
+	text-decoration:none;
+}			
+.plus{
+	padding-left:10px;
+	font-size:24px;
+	line-height:1;
+	width:36px;
+	display:table-cell;
+	vertical-align:middle;
+}
+.describe{
+	padding:11px 10px 10px 0;
+	text-align:left;
+	line-height:1.4;
+	display:table-cell;
+	vertical-align:middle;
+	font-size:13px;
+}
+
+.attachment-preview{
+	display:none;
+	position:relative;
+	background-color:#fff;
+	border:0.5px solid #ddd;
+	height:4.6rem;
+	width:100%;
+}			
+.info{
+	position:relative;
+	left:0.775rem;
+	width:100%;
+}
+			
+.cropit-preview{
+	float:left;
+	position:relative;
+	margin-top:0.775rem;
+	background-color:#f8f8f8;
+	background-size:cover;
+	border:1px solid #ccc;
+	width:3.1rem;
+}
+.status{
+	float:left;
+	position:relative;
+	margin-top:1.375rem;
+	margin-left:0.375rem;
+	width:70%;
+}
+.actions{
+	float:right;
+	position:relative;
+	margin-top:1.375rem;
+	width:6rem;
+}
+
+.rechoose-container{
+	position:relative;
+	right:5.8rem;
+	top:0.2rem;
+	cursor:pointer;
+}
+.delete-link{
+	text-decoration:none;
+	color:red;
+}
+.delete-link:hover{
+	text-decoration:none;
+	color:red;
+}
+.rechoose-link{
+	font-size:1.3rem;
+	font-weight:400;
+	width:5.5rem;
+	color:#009AFF;
+	pointer-events:none;
+}
+.rechoose-file{	
+	width:5.5rem;
+	font-size:5px;
+	opacity:0;
+	filter:alpha(opacity=0);
+	cursor:pointer;
+}
+
+.progressbar{
+	position:absolute;
+	width:100%;
+	height:4.6rem;
+}
+.ui-progressbar .ui-progressbar-value {
+	margin: -1px;
+	height: 100%;
+	background-color: #E6F5FF;
+}
+.ui-widget-header {
+	border:0;
+	background:#cccccc;
+	color:#222222;
+	font-weight:bold;
+}			
+.ui-corner-all{
+	border-top-left-radius:0;
+	border-top-right-radius:0;
+	border-bottom-left-radius:0;
+	border-bottom-right-radius:0;
+}
